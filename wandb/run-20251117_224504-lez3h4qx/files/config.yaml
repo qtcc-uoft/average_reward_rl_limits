@@ -1,0 +1,125 @@
+wandb_version: 1
+
+project:
+  desc: null
+  value: average-reward-drl
+group:
+  desc: null
+  value: RVI_SAC-Ant-v4
+tags:
+  desc: null
+  value:
+  - RVI_SAC
+  - Ant-v4
+seed:
+  desc: null
+  value: 0
+total_steps:
+  desc: null
+  value: 1000000
+eval_episodes:
+  desc: null
+  value: 10
+eval_interval:
+  desc: null
+  value: 5000
+log_interval:
+  desc: null
+  value: 500
+use_reset_scheme:
+  desc: null
+  value: true
+algo:
+  desc: null
+  value:
+    id: RVI_SAC
+    name: RVI_SAC
+    params:
+      batch_size: 256
+      lr: 0.0003
+      critic_hidden_dim: 256
+      actor_hidden_dim: 256
+      replay_buffer_capacity: 1000000
+      replay_start_size: 10000
+      tau: 0.005
+      critic_reset_hidden_dim: 64
+      fq_gain: 1.0
+      fq_reset_gain: 1.0
+      fq_update_tau: 0.005
+      target_reset_prob: 0.001
+    use_reset_scheme: true
+env:
+  desc: null
+  value:
+    type: gymnasium
+    id: Ant-v4
+    name: Ant-v4
+    has_termination: true
+    train:
+      max_episode_steps: 1000
+    eval:
+      max_episode_steps: 1000
+    reference_state:
+    - 0.4658
+    - 0.3983
+    - 0.7825
+    - -0.4744
+    - -0.0632
+    - 0.0132
+    - 0.6156
+    - -0.5388
+    - -1.0077
+    - -0.3787
+    - -0.7913
+    - 0.1345
+    - 1.1419
+    - -1.3971
+    - -0.2002
+    - -0.4032
+    - 4.1411
+    - 0.1198
+    - 1.7136
+    - -11.2308
+    - -0.7422
+    - -0.7605
+    - -2.4134
+    - -4.8597
+    - 4.593
+    - 3.8711
+    - 0.6545
+    reference_action:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.18
+    cli_version: 0.15.12
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1763437504.060134
+    t:
+      1:
+      - 1
+      - 50
+      - 55
+      2:
+      - 1
+      - 50
+      - 55
+      3:
+      - 15
+      - 16
+      - 23
+      4: 3.10.18
+      5: 0.15.12
+      8:
+      - 5
+      13: linux-x86_64

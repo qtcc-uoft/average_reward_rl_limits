@@ -1,0 +1,7 @@
+defaults:
+  - common
+
+id: SAC
+params:
+  gamma: 0.99
+use_reset_scheme: false

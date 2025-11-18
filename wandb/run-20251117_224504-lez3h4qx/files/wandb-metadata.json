@@ -1,0 +1,208 @@
+{
+    "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.10.18",
+    "heartbeatAt": "2025-11-18T03:45:04.551019",
+    "startedAt": "2025-11-18T03:45:04.056608",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/root/average_reward_rl_limits/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/qtcc-uoft/average_reward_rl_limits",
+        "commit": "4a7791886a1381ede269d66f97d3e8a42b332b3f"
+    },
+    "email": "qtcc@cs.toronto.edu",
+    "root": "/root/average_reward_rl_limits",
+    "host": "LAPTOP-QPO2HUEA",
+    "username": "root",
+    "executable": "/root/average_reward_rl_limits/pyenv/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2419.1999999999985,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2419.2,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 250.92389297485352,
+            "used": 220.74565505981445
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+            "memory_total": 12878610432
+        }
+    ],
+    "memory": {
+        "total": 29.371196746826172
+    }
+}

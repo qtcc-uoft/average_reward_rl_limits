@@ -1,0 +1,8 @@
+defaults:
+  - rvi_sac
+
+id: RVI_SAC_WITH_REFERENCE
+
+params:
+  reference_state: ${env.reference_state}
+  reference_action: ${env.reference_action}
