@@ -1,0 +1,9 @@
+defaults:
+  - default_toy
+
+id: Hallway
+has_termination: false
+train:
+  length: 5
+eval:
+  length: 5

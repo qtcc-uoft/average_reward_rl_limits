@@ -1,0 +1,7 @@
+type: toy
+name: ${env.id}
+has_termination: false
+train:
+  time_limit: 1000
+eval:
+  time_limit: 1000
