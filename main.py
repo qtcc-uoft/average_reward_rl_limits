@@ -7,6 +7,7 @@ from omegaconf import DictConfig, OmegaConf
 
 import wandb
 from average_reward_drl import DMCWrapper, fix_seed, make_algorithm, train
+from average_reward_drl.environments.hallway import Hallway
 
 log = logging.getLogger(__name__)
 
@@ -14,7 +15,7 @@ log = logging.getLogger(__name__)
 @hydra.main(version_base=None, config_path="experiments/conf", config_name="config")
 def main(cfg: DictConfig) -> None:
     conf = OmegaConf.to_container(cfg, resolve=True)
-
+    #print(conf)
     # Fix seed
     fix_seed(conf["seed"])
 
@@ -28,6 +29,10 @@ def main(cfg: DictConfig) -> None:
         task_name = conf["env"]["task_name"]
         env_train = DMCWrapper(domain_name, task_name)
         env_eval = DMCWrapper(domain_name, task_name)
+    elif conf["env"]["type"] == "toy":
+        env_id = conf["env"]["id"]
+        env_train = gymnasium.make(env_id, **conf["env"]["train"])
+        env_eval = gymnasium.make(env_id, **conf["env"]["eval"])
 
     env_train = RescaleAction(env_train, -1.0, 1.0)
     env_eval = RescaleAction(env_eval, -1.0, 1.0)
@@ -46,6 +51,7 @@ def main(cfg: DictConfig) -> None:
         project=conf["project"],
         group=conf["group"],
         tags=conf["tags"],
+        name=conf["name"],
         config=conf,
     )
 

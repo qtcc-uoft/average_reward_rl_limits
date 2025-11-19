@@ -12,6 +12,7 @@ from average_reward_drl.dmc_wrapper import DMCWrapper
 from average_reward_drl.replay_buffer import Batch, ReplayBuffer
 from average_reward_drl.train import train
 from average_reward_drl.utils import fix_seed
+from average_reward_drl.environments.hallway import Hallway
 
 __all__ = [
     "make_algorithm",

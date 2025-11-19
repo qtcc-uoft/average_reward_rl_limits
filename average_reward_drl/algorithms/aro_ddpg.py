@@ -63,7 +63,7 @@ class ARO_DDPG(AlgorithmBase):
         lr: float = 3e-4,
         batch_size: int = 256,
         replay_buffer_capacity: int = 10**6,
-        replay_start_size: int = 1000,
+        replay_start_size: int = 10000,
         tau: float = 0.005,
         device: Union[str, torch.device] = torch.device(
             "cuda:0" if cuda.is_available() else "cpu"
@@ -133,6 +133,7 @@ class ARO_DDPG(AlgorithmBase):
             if self.training:
                 if len(self.replay_buffer) < self.replay_start_size:
                     action = np.random.uniform(-1, 1, size=(self.dim_action,))
+                    action = np.ones_like(action)
                 else:
                     state = torch.from_numpy(state).float().unsqueeze(0).to(self.device)
                     action = self.actor(state).squeeze(0).cpu().numpy()
