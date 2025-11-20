@@ -121,10 +121,15 @@ class RVI_SAC(AlgorithmBase):
             if len(self.replay_buffer) < self.replay_start_size:
                 action = np.random.uniform(-1, 1, size=(self.dim_action,))
                 action = np.ones_like(action)
+                if np.random.uniform() > 0.95:
+                    action = action * -1
             else:
+                
                 state = torch.from_numpy(state).float().unsqueeze(0).to(self.device)
                 action_dist: Distribution = self.actor(state)
                 action = action_dist.sample().squeeze(0).cpu().numpy()
+                if np.random.uniform() < 0.95:
+                    action = np.ones_like(action)
 
         else:
             state = torch.from_numpy(state).float().unsqueeze(0).to(self.device)

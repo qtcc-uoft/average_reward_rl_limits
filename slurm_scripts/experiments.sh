@@ -75,19 +75,19 @@ name='aro_ddpg-hallway90'
 # runs SAC on stuff
 sbatch hallway_wrapper.sh \
 algo='sac' \
-algo.params.gamma=0.99 \
+algo.params.gamma=0.9995 \
 env='toy/Hallway' \
 env.train.length=10 \
 env.eval.length=10 \
-name='aro_ddpg-hallway10'
+name='sac-hallway10'
 
 sbatch hallway_wrapper.sh \
 algo='sac' \
-algo.params.gamma=0.999 \
+algo.params.gamma=0.9995 \
 env='toy/Hallway' \
 env.train.length=30 \
 env.eval.length=30 \
-name='aro_ddpg-hallway30'
+name='sac-hallway30'
 
 sbatch hallway_wrapper.sh \
 algo='sac' \
@@ -95,21 +95,21 @@ algo.params.gamma=0.9995 \
 env='toy/Hallway' \
 env.train.length=50 \
 env.eval.length=50 \
-name='aro_ddpg-hallway50'
+name='sac-hallway50'
 
 sbatch hallway_wrapper.sh \
 algo='sac' \
-algo.params.gamma=0.9997 \
+algo.params.gamma=0.9995 \
 env='toy/Hallway' \
 env.train.length=70 \
 env.eval.length=70 \
-name='aro_ddpg-hallway70'
+name='sac-hallway70'
 
 sbatch hallway_wrapper.sh \
 algo='sac' \
-algo.params.gamma=0.9998 \
+algo.params.gamma=0.9995 \
 env='toy/Hallway' \
 env.train.length=90 \
 env.eval.length=90 \
-name='aro_ddpg-hallway90'
+name='sac-hallway90'
 
