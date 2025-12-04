@@ -1,0 +1,9 @@
+defaults:
+  - default_toy
+
+id: Crossroad
+has_termination: false
+train:
+  long_length: 10
+eval:
+  long_length: 10

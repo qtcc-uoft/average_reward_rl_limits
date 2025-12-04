@@ -8,6 +8,7 @@ from omegaconf import DictConfig, OmegaConf
 import wandb
 from average_reward_drl import DMCWrapper, fix_seed, make_algorithm, train
 from average_reward_drl.environments.hallway import Hallway
+from average_reward_drl.environments.crossroad import Crossroad
 
 log = logging.getLogger(__name__)
 
